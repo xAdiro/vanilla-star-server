@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>vanilla_asterisk</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Watch Remove="bin/**;obj/**;wwwroot/**;node_modules/**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MineStat" Version="3.1.2" />
+  </ItemGroup>
+</Project>

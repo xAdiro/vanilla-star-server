@@ -1,0 +1,53 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Strona główna";
+}
+
+<div class="text-center">
+    <img class="img-fluid rounded" src="~/img/server-banner.png">
+    <br>
+    <br>
+    <h1>IP: mc.arostek.dev</h1>
+    <br>
+    <br>
+    <h2>Co to i po co?</h2>
+    <p>
+        Zapraszam gorąco na serwer (prawie) Vanilla survival. Prawie bo wprowadziłem kilka zmian, żeby 
+        urozmaicić rozgrywkę o czym dalej. Założenie jest takie, że będzie to świat do którego ja i wy możemy sobie w 
+        dowolnym momencie wrócić i coś porobić, jak najdzie ochota.
+    </p>
+    <h2>O co proszę</h2>
+    <p>
+        <b>Nie griefować, cheatować i robić lag maszyn</b>. Do wykrycia tych rzeczy mam odpowiednie pluginy i będę wywalał za nie 
+        bezpowrotnie.
+        Nie nękajcie też innych... proszę...
+    </p>
+    <h2>Wersja i platformy</h2>
+    <p>
+        1.21.7 Java i Bedrock Edition. Nie trzeba nic instalować, żeby dołączyć. Nie trzeba mieć wykupionego konta. 
+        Można grać z PCta, konsoli czy telefonu.
+        Są jednak dwa <a href="#mody">opcjonalne mody</a>(tylko Java Edition) do których instalacji zachęcam.
+    </p>
+    <h2>Wprowadzone zmiany</h2>
+    <p>
+        Nie zmieniają znacząco rozgrywki (poza jedną). Lista wszystkich zmian jest <a asp-page="/Wiki" asp-area="">tutaj</a>, ale jedna najbardziej kontrowersyjna to: 
+        <b>Elytra nie może mieć mendingu i naprawia się ją netherite scrapami</b>. Usunąłem też posrane koszty XP w 
+        naprawie przedmiotów - max jest 15 i nigdy nie będzie większy. Nie istnieje "Too expensive".
+    </p>
+    <h2>Opcjonalne mody</h2>
+    <p id="mody">
+        <a target="_blank" href="https://modrinth.com/plugin/simple-voice-chat">Simple Voice Chat</a> czat głosowy w grze.
+        <br>
+        <br>
+        <a target="_blank" href="https://modrinth.com/mod/distanthorizons">Distant Horizons</a> mod umożliwiający ustawienie dużego
+        render distance (na tym serwerze do 128 chunków), poprzez nie rysowanie szczegółów odległych chunków.
+        Dla osób ze słabszym PC też może się nadać, bo można ustawić bardzo mały normalny render distance, 
+        a podkręcić ten mniej szczegółowy.
+    </p>
+    <h2>Utrzymanie serwera</h2>
+    <p>
+        Nie oczekuję od nikogo żadnej składki finansowej na ten serwer. Maszyna jest w pełni moja i siedzi w moim domu,
+        niemniej prąd nie jest darmowy i utrzymanie to koszt około 10 zł miesięcznie. Jeśli ktoś uzna, że chce coś dać to najwygodniej blikiem.
+    </p>
+</div>

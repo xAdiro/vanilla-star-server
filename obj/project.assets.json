@@ -1,0 +1,116 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "MineStat/3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard20/MineStat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard20/MineStat.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MineStat/3.1.2": {
+      "sha512": "x+svIHQxOZdgz1EcTc37EekvmhN3Xu1ahbhonadcovA0C2QcjDl24+iQQjM2RKv3nD1yf2dz5vB2WrOZO6OQnw==",
+      "type": "package",
+      "path": "minestat/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.md",
+        "lib/MineStat.xml",
+        "lib/net46/MineStat.dll",
+        "lib/net46/MineStat.xml",
+        "lib/netstandard20/MineStat.dll",
+        "lib/netstandard20/MineStat.xml",
+        "minestat.3.1.2.nupkg.sha512",
+        "minestat.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "MineStat >= 3.1.2"
+    ]
+  },
+  "packageFolders": {
+    "/home/adrian/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/adrian/repos/vanilla-asterisk/vanilla-asterisk.csproj",
+      "projectName": "vanilla-asterisk",
+      "projectPath": "/home/adrian/repos/vanilla-asterisk/vanilla-asterisk.csproj",
+      "packagesPath": "/home/adrian/.nuget/packages/",
+      "outputPath": "/home/adrian/repos/vanilla-asterisk/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/adrian/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "/usr/lib/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "MineStat": {
+            "target": "Package",
+            "version": "[3.1.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

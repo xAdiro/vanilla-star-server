@@ -1,0 +1,265 @@
+﻿@page
+@model WikiModel
+@{
+    ViewData["Title"] = "Lista zmian";
+}
+<h1>Lista zmian</h1>
+
+<p>
+    Starałem się ułożyć je od najbardziej istotnych.
+</p>
+
+<br>
+
+<h3> Elytra </h3>
+<p>
+    Nie można wbić Mendingu na Elytre. Elytre naprawia się netherite scrapami. Niestety, ale Elytra zabija każdy inny
+    środek transportu w minecrafcie przez to, że z Mendingiem nigdy się nie psuje, a fajerwerki są śmiesznie tanie i można
+    zrobić ich farmę.
+</p>
+
+<br>
+
+<h3> Lepsze kowadła </h3>
+<p>
+    Koszt w kowadle nie przekracza 15 lvli. Nie pojawi się nigdy "Too expensive", więc można stale naprawiać swoje przedmioty
+    bez Mendingu. Too expensive to durna mechanika + ta zmiana pomaga z zachowaniem użytecznej Elytry.
+</p>
+
+<br>
+
+<h3> Phantomy </h3>
+<p>
+    Wyłączone phantomy! Nie pojawią się w nocy. Phantom membrane dropi zamiast tego z nietoperzy. Jeśli chce się zrobić
+    achievement albo być wrednym to jajka phantoma craftuje się z 4 phantom membrane.
+</p>
+
+<br>
+
+<h3> Niewielkie zmiany w terenie </h3>
+<p>
+    <div class="carousel slide w-75" id="carousel-terrain">
+        <div class="carousel-inner">
+            <div class="active carousel-item">
+                <img class="d-block w-100" src="~/img/ss/1.webp">
+            </div>
+            @for(int i = 2; i <= 9; i++)
+            {
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="~/img/ss/@(i).webp">
+                </div>
+            }
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-terrain" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-terrain" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <br>
+
+    <ul>
+        <li>Nowe dungeony i Villagerzy</li>
+        <li>Wioski na wodzie</li>
+        <li>Podziemne rzeki</li>
+        <li>Ładniejsza przyroda</li>
+        <li>Lepsze kopalnie</li>
+        <li>Lepszy stronghold</li>
+        <li>Lepsza światynia w dżungli</li>
+    </ul>
+
+    Użyte datapacki i mody:
+    <ul>
+        <li><a target="_blank" href="https://modrinth.com/datapack/explorify">Explorify</a></li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/hopo-better-mineshaft">Hopo better mineshaft</a></li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/geophilic">Geophilic</a></li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/tidal-towns">Tidal towns</a></li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/dungeons-and-taverns">Dungeons and Tavers</a> (wersja bez enchantow)</li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul">DnT stronghold overhaul</a></li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/dungeons-and-taverns-jungle-temple-overhaul">DnT jungle temple overhaul</a></li>
+    </ul>
+</p>
+
+<br>
+
+<h3> Szybsze wagoniki</h3>
+<p>
+    Vanilla wagoniki są praktycznie bezużyteczne jako środek transportu, więc zostały przyspieszone 4-krotnie. 
+    Dodatkowo tory się łatwiej craftuje.
+</p>
+
+<br>
+
+<h3> Nagrobki </h3>
+<p>
+    Po śmierci pojawia się nagrobek z przedmiotami. Zbieranie rozsypanych po całej jaskini przedmiotów to jedna z mniej
+    fajnych rzeczy jakie można robić w tej grze.
+</p>
+
+<br>
+
+<h3> Endermany nie daja XP w endzie </h3>
+<p>
+    Ban na farmy endermanow. Są najbardziej niezbalansowaną expiarką w grze. 
+</p>
+
+<br>
+
+
+<h3> Dziury po creeperach</h3>
+<p>
+Creepery dalej wybuchają, ale zostawiają wszystkie bloki, które wysadzają. Można od razu łatac dziury!
+</p>
+
+<br>
+
+<h3>Lepsze armor standy</h3>
+<p>
+    Można zmieniać pozycje armor standów i dać im ręce.
+</p>
+
+<br>
+
+<h3> Wielbłąd na pustyni </h3>
+<p>
+    Wielbłąd jest szybszy na piasku. W vanilli to gorsze konie na dwie osoby. Dodatkowo dają teraz mleko.
+</p>
+
+<br>
+
+<h3> Buff hełmu z żółwia</h3>
+<p>
+    Oddychanie pod wodą wydłużone z 15 sekund do 1 min 30 sekund. W Vanilli jest zupełnie nie warty robienia, tutaj może ktoś doceni.
+</p>
+
+<br>
+
+<h3> Flagi </h3>
+<p>
+    Banner postawiony na boku płotka zawiesza się jak flaga.
+</p>
+
+<br>
+
+<h3>Kołdry</h3>
+<p>
+    Postawienie banera na łóżku zamienia go w pościel.
+</p>
+
+<br>
+
+<h3>Więcej roślin w doniczkach</h3>
+<p>
+    Upuszczenie praktycznie dowolnej rośliny do doniczki zasadzi ją w niej.
+</p>
+
+<br>
+
+<h3> Drobne zmiany </h3>
+<p>
+    <ul>
+        <li>Potiony stackują się do 16</li>
+        <li>Można robić znacznie większe portale do netheru</li>
+        <li>Gracze upuszczaja swoje glowy po smierci</li>
+        <li>Stone cutter może robić mini bloki</li>
+        <li>Stone cutter tnie drewno</li>
+        <li>Rzucenie Tridentem z Channelingiem w niebo na Y>=320 robi burzę</li>
+        <li>Endermany nie psują terenu</li>
+        <li>Creepery czasami nie wybuchają</li>
+        <li>Wandering trader ogłasza się jak w Terrari</li>
+        <li>Śmierc villagerow widać na czacie</li>
+        <li>Nazwanie moba "silence_me", "Silence me" albo "silence me" wycisza jego dźwięki</li>
+        <li>Deszcz przyspiesza wzrost roślin</li>
+        <li>Zbieranie roślin daje trochę xpa</li>
+        <li>Niebieskie creepery respią się naturalnie</li>
+        <li>Sen przyspiesza noc zamiast jej skipować</li>
+        <li>Torchflower świeci (ale trzeba relogować)</li>
+    </ul>
+</p>
+
+<br>
+
+<h3>Kilka mobów dropi dodatkowe rzeczy:</h3>
+<p>
+    <ul>
+        <li>Wielbłąd 0-2 kaktusy</li>
+        <li>Pancernik 0-1 tarczki</li>
+        <li>Endermite 0-1 chorus fruit</li>
+        <li>Bogged (baggieny szkielet) 0-2 lilie wodne</li>
+        <li>Stray (lodowy szkielet) 0-2 bloki lodu</li>
+        <li>Lama 0-1 slimeballe</li>
+        <li>Lama handlarza 0-3 emeraldy i 0-1 slimeballe</li>
+        <li>Husk (pustynny zombie) 0-2 piasku</li>
+    </ul>
+</p>
+
+<hr>
+
+<h3>Lista wszystkich modów i resource packów</h3>
+<p>
+    <ul>
+        <li><a target="_blank" href="https://modrinth.com/datapack/explorify">Explorify</a></li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/hopo-better-mineshaft">Hopo better mineshaft</a></li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/geophilic">Geophilic</a></li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/tidal-towns">Tidal towns</a></li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/dungeons-and-taverns">Dungeons and Tavers</a> (wersja bez enchantow)</li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul">DnT stronghold overhaul</a></li>
+        <li><a target="_blank" href="https://modrinth.com/datapack/dungeons-and-taverns-jungle-temple-overhaul">DnT jungle temple overhaul</a></li>
+        <li>
+            <a href="https://vanillatweaks.net/picker/datapacks/" target="_blank">Vanilla tweaks</a>
+            <ul>
+                <li>custom nether portal</li>
+                <li>silence mobs</li>
+                <li>mini blocks</li>
+                <li>graves (/function graves:config i włączyć grave robbing)</li>
+                <li>player head drops</li>
+                <li>armor statues</li>
+                <li>storm channeling</li>
+                <li>unlock all recipes</li>
+                <li>anti enderman grief</li>
+                <li>bat membranes</li>
+                <li>husks drop sand</li>
+                <li>confetti creeper (`/scoreboard players set #chance cftCreep.config 10`)</li>
+                <li>Wandering trader announcements</li>
+                <li>Villager death messages</li>
+                <li>Track raw statistics</li>
+                <li>track statistics</li>
+            </ul>
+        </li>
+        <li>minecart improvements /gamerule minecartMaxSpeed 24</li>
+        <li><a href="https://modrinth.com/mod/crops-love-rain" target="_blank">Crops Love Rain</a></li>
+        <li><a href="https://modrinth.com/mod/crops-xp" target="_blank">Crops XP</a></li>
+        <li><a href="https://modrinth.com/mod/sleep-warp-updated" target="_blank">Sleep Warp Updated</a></li>
+        <li><a href="https://modrinth.com/mod/naturally-charged-creepers" target="_blank">Naturally Charged Creepers</a></li>
+        <li><a href="https://modrinth.com/datapack/banner-flags" target="_blank">Banner Flags</a></li>
+        <li><a href="https://modrinth.com/mod/voice-chat-interaction" target="_blank">Voice Chat Interaction</a></li>
+        <li><a href="https://modrinth.com/mod/noexpensive" target="_blank">No Expensive</a></li>
+        <li><a href="https://modrinth.com/datapack/curi-woodcutter" target="_blank">Curi Woodcutter</a></li>
+        <li><a href="https://modrinth.com/datapack/gardeners-dream" target="_blank">Gardener’s Dream</a></li>
+        <li><a href="https://modrinth.com/datapack/banner-bedsheets" target="_blank">Banner Bedsheets</a></li>
+        <li><a href="https://modrinth.com/mod/glowing-torchflower" target="_blank">Glowing Torchflower</a></li>
+        <li><a href="https://modrinth.com/datapack/stackable-potions" target="_blank">Stackable Potions</a></li>
+        <li><a href="https://modrinth.com/mod/item-components/versions" target="_blank">Item Components</a></li>
+        <li><a href="https://modrinth.com/mod/no-chat-reports" target="_blank">No Chat Reports</a></li>
+        <li><a href="https://modrinth.com/plugin/chunky" target="_blank">Chunky (plugin)</a></li>
+        <li><a href="https://modrinth.com/mod/im-fast" target="_blank">I’m Fast</a></li>
+        <li><a href="https://modrinth.com/mod/sparsestructures" target="_blank">Sparse Structures</a></li>
+        <li><a href="https://modrinth.com/mod/c2me-fabric" target="_blank">C2ME Fabric</a></li>
+        <li><a href="https://modrinth.com/mod/distanthorizons" target="_blank">Distant Horizons</a></li>
+        <li><a href="https://modrinth.com/mod/lithium"target="_blank">Lithium</a></li>
+        <li><a href="https://modrinth.com/mod/scalableluxh" target="_blank">Scalable Lux H</a></li>
+        <li><a href="https://modrinth.com/mod/spark" target="_blank">Spark</a></li>
+        <li><a href="https://modrinth.com/mod/easyauth" target="_blank">EasyAuth</a></li>
+        <li><a href="https://modrinth.com/plugin/geyser" target="_blank">Geyser (plugin)</a></li>
+        <li><a href="https://modrinth.com/mod/floodgate" target="_blank">Floodgate</a></li>
+        <li><a href="https://modrinth.com/mod/grieflogger" target="_blank">Grieflogger</a></li>        <li>/execute as &commat;[type=minecraft:camel] commat &commat;s if block ~ ~-1 ~ sand run effect give &commat;s minecraft:speed 1 7 true</li>
+        <li>/execute as &commat;a at &commat;s if items entity &commat;s armor.head turtle_helmet unless block ~ ~1.51 ~ water run effect give &commat;s minecraft:water_breathing 90 0 true</li>
+        <li>/gamerule mobExplosionDropDecay false</li>
+        <li><a href="" target="_blank">Mój mod</a></li>
+        <li><a href="" target="_blank">Mój datapack</a></li>
+    </ul>
+</p>

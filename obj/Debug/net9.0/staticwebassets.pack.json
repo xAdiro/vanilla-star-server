@@ -1,0 +1,369 @@
+{
+  "Files": [
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/obj/Debug/net9.0/scopedcss/projectbundle/vanilla-asterisk.bundle.scp.css",
+      "PackagePath": "staticwebassets/vanilla-asterisk.cu0bw5ca6s.bundle.scp.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/font/1_MinecraftRegular1.otf",
+      "PackagePath": "staticwebassets/font/1_MinecraftRegular1.otf"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/font/2_MinecraftItalic1.otf",
+      "PackagePath": "staticwebassets/font/2_MinecraftItalic1.otf"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/font/3_MinecraftBold1.otf",
+      "PackagePath": "staticwebassets/font/3_MinecraftBold1.otf"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/font/4_MinecraftBoldItalic1.otf",
+      "PackagePath": "staticwebassets/font/4_MinecraftBoldItalic1.otf"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/dirt.png",
+      "PackagePath": "staticwebassets/img/dirt.png"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/grass_block_side.png",
+      "PackagePath": "staticwebassets/img/grass_block_side.png"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/icon/advancement.png",
+      "PackagePath": "staticwebassets/img/icon/advancement.png"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/icon/home.png",
+      "PackagePath": "staticwebassets/img/icon/home.png"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/icon/map.png",
+      "PackagePath": "staticwebassets/img/icon/map.png"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/icon/stats.png",
+      "PackagePath": "staticwebassets/img/icon/stats.png"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/server-banner.png",
+      "PackagePath": "staticwebassets/img/server-banner.png"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/ss/1.webp",
+      "PackagePath": "staticwebassets/img/ss/1.webp"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/ss/2.webp",
+      "PackagePath": "staticwebassets/img/ss/2.webp"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/ss/3.webp",
+      "PackagePath": "staticwebassets/img/ss/3.webp"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/ss/4.webp",
+      "PackagePath": "staticwebassets/img/ss/4.webp"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/ss/5.webp",
+      "PackagePath": "staticwebassets/img/ss/5.webp"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/ss/6.webp",
+      "PackagePath": "staticwebassets/img/ss/6.webp"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/ss/7.webp",
+      "PackagePath": "staticwebassets/img/ss/7.webp"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/ss/8.webp",
+      "PackagePath": "staticwebassets/img/ss/8.webp"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/img/ss/9.webp",
+      "PackagePath": "staticwebassets/img/ss/9.webp"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.js"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/package-lock.json",
+      "PackagePath": "staticwebassets/package-lock.json"
+    },
+    {
+      "Id": "/home/adrian/repos/vanilla-asterisk/wwwroot/package.json",
+      "PackagePath": "staticwebassets/package.json"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.vanilla-asterisk.props",
+      "PackagePath": "build\\vanilla-asterisk.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.vanilla-asterisk.props",
+      "PackagePath": "buildMultiTargeting\\vanilla-asterisk.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.vanilla-asterisk.props",
+      "PackagePath": "buildTransitive\\vanilla-asterisk.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.vanilla-asterisk.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.vanilla-asterisk.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

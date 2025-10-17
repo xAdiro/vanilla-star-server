@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/vanilla-asterisk.props" />
-</Project>

@@ -5,6 +5,6 @@
 }
 <h2>Statystyki</h2>
 
-@foreach(string board in @Model.Categories){
-    <div>@board</div>
+@foreach(var board in @Model.Categories){
+    <div>@board.Value   @board.FriendlyName</div>
 }

@@ -1,18 +1,27 @@
+using Microsoft.EntityFrameworkCore;
+using vanilla_asterisk.Data;
 using vanilla_asterisk.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Services
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IMcServerStatusService,MineStatService>();
+builder.Services.AddScoped<IScoreboardReader,FNBTScoreboardReader>();
+
+// export ConnectionStrings__DefaultConnection="Host=192.168.0.3;Database=vanilla_scores;Username=vanilla_asterisk;Password=<password>"
+string connectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
+    ?? throw new InvalidOperationException("No connectiotion string env variable found");
+
+builder.Services.AddDbContext<MinecraftDbContext>(options =>
+        options.UseNpgsql(connectionString));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

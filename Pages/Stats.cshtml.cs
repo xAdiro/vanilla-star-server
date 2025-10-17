@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using vanilla_asterisk.Data;
 using vanilla_asterisk.DTOs.MinecraftFiles.Statistics;
+using vanilla_asterisk.DTOs.Pages.Stats;
 using vanilla_asterisk.Models;
 using vanilla_asterisk.Pages.Base;
 using vanilla_asterisk.Services;
@@ -14,6 +15,7 @@ namespace vanilla_asterisk.Pages;
 public class StatsModel : BasePageModel
 {
     public required List<AliasedValue> Categories { get; set; }
+    public required List<AliasedValue> Players { get; set; }
     private readonly IMcServerStatusService mc;
     private readonly IScoreboardReader sr;
     private readonly MinecraftDbContext context;
@@ -27,7 +29,11 @@ public class StatsModel : BasePageModel
 
     public async Task OnGetAsync()
     {
-        Categories = await context.StatCategories.Select(category => category.FriendlyName).ToListAsync();
+        Categories = await context.StatCategories.Select(category => new AliasedValue
+        {
+            FriendlyName = category.FriendlyName,
+            Value = category.Name
+        }).ToListAsync();
         Console.WriteLine(Categories);
     }
 

@@ -1,13 +1,57 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using vanilla_asterisk.Data;
+using vanilla_asterisk.DTOs.MinecraftFiles.Statistics;
+using vanilla_asterisk.Models;
 using vanilla_asterisk.Pages.Base;
 using vanilla_asterisk.Services;
 
 namespace vanilla_asterisk.Pages;
 
-public class StatsModel(IMcServerStatusService mc) : BasePageModel(mc)
+[BindProperties]
+public class StatsModel : BasePageModel
 {
-    public void OnGet()
+    public required List<AliasedValue> Categories { get; set; }
+    private readonly IMcServerStatusService mc;
+    private readonly IScoreboardReader sr;
+    private readonly MinecraftDbContext context;
+
+    public StatsModel(IMcServerStatusService mc, IScoreboardReader sr, MinecraftDbContext context) : base(mc)
     {
+        this.mc = mc;
+        this.sr = sr;
+        this.context = context;
+    }
+
+    public async Task OnGetAsync()
+    {
+        Categories = await context.StatCategories.Select(category => category.FriendlyName).ToListAsync();
+        Console.WriteLine(Categories);
+    }
+
+    [Obsolete]
+    private void SaveCategoriesToDb()
+    {
+        string path = @"resources/stats.json";
+
+        string json = System.IO.File.ReadAllText(path);
+        StatsFile stats = JsonConvert.DeserializeObject<StatsFile>(json) ?? throw new Exception();
+
+
+        const int prefixLength = 10;
+        List<string> categories = stats.Stats.Keys.Select(key => key.ToString()).ToList();
+
+        foreach (string category in categories)
+        {
+            context.StatCategories.Add(new StatCategory
+            {
+                Name = category,
+                FriendlyName = category.Substring(prefixLength).Replace("_", "")
+            });
+        }
+
+        context.SaveChanges();
     }
 }

@@ -4,3 +4,7 @@
     ViewData["Title"] = "Statystyki";
 }
 <h2>Statystyki</h2>
+
+@foreach(string board in @Model.Categories){
+    <div>@board</div>
+}

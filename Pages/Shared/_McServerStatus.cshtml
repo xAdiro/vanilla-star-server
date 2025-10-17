@@ -1,0 +1,16 @@
+@page
+@model McServerStatusModel
+@{
+    Layout = null;
+}
+@if (Model.IsOnline)
+{
+    <i class="bi bi-reception-4 text-success"></i>
+    <span id="server-players">@Model.OnlinePlayers/@Model.MaxPlayers</span>
+}
+else
+{
+    <span class="text-danger fw-bolder">X</span>
+    <span>Offline</span>
+}
+

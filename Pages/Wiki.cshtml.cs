@@ -5,7 +5,7 @@ using vanilla_asterisk.Services;
 
 namespace vanilla_asterisk.Pages;
 
-public class WikiModel(IMcServerStatusService mc) : BasePageModel(mc)
+public class WikiModel : BasePageModel
 {
     public void OnGet()
     {

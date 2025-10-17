@@ -5,7 +5,7 @@ using vanilla_asterisk.Services;
 
 namespace vanilla_asterisk.Pages;
 
-public class AchievementModel(IMcServerStatusService mc) : BasePageModel(mc)
+public class AchievementModel()
 {
     public void OnGet()
     {

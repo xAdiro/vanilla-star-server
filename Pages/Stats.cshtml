@@ -6,8 +6,12 @@
 <h2>Statystyki</h2>
 
 Brak danych
-@*
-@foreach(var board in @Model.Categories){
-    <div>@board.Value   @board.FriendlyName</div>
-}
-*@
+<br>
+
+<label for="abc" class="form-label">Filtry</label>
+<select class="form-select bg-dark text-white" id="abc" name="abc">
+    @foreach(var board in @Model.Categories){
+        <option value="@board.Value">@board.FriendlyName</option>
+    }
+</select>
+

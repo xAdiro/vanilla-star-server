@@ -12,20 +12,12 @@ using vanilla_asterisk.Services;
 namespace vanilla_asterisk.Pages;
 
 [BindProperties]
-public class StatsModel : BasePageModel
+public class StatsModel(IScoreboardReader sr, MinecraftDbContext context) : BasePageModel
 {
     public required List<AliasedValue> Categories { get; set; }
     public required List<AliasedValue> Players { get; set; }
-    private readonly IMcServerStatusService mc;
-    private readonly IScoreboardReader sr;
-    private readonly MinecraftDbContext context;
-
-    public StatsModel(IMcServerStatusService mc, IScoreboardReader sr, MinecraftDbContext context) : base(mc)
-    {
-        this.mc = mc;
-        this.sr = sr;
-        this.context = context;
-    }
+    private readonly IScoreboardReader sr = sr;
+    private readonly MinecraftDbContext context = context;
 
     public async Task OnGetAsync()
     {
@@ -34,7 +26,6 @@ public class StatsModel : BasePageModel
             FriendlyName = category.FriendlyName,
             Value = category.Name
         }).ToListAsync();
-        Console.WriteLine(Categories);
     }
 
     [Obsolete]

@@ -6,7 +6,7 @@
     <title>@ViewData["Title"] - Vanilla*</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body class="text-light m-0">
@@ -21,7 +21,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between text-light mc-font">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item h5 p-2 mx-2 border-end">
-                            <a class="nav-link d-flex flex-column align-items-center" href="http://mapa.mc.arostek.pl/"><i class="bi bi-map"></i><span>Mapa</span></a>
+                            <a class="nav-link d-flex flex-column align-items-center" href="http://mcmap.arostek.dev/"><i class="bi bi-map"></i><span>Mapa</span></a>
                         </li>
                         <li class="nav-item h5 p-2 mx-2 border-end">
                             <a class="nav-link d-flex flex-column align-items-center" asp-area="" asp-page="/Achievement"><i class="bi bi-card-checklist"></i><span>Achievementy</span></a>
@@ -34,17 +34,10 @@
                         </li>
                         <li class="nav-item h5 p-2 ms-auto">
                                 <div>mc.arostek.dev</div>
-                                <div class="text-justify">
-                                    @if (Model.IsOnline)
-                                    {
-                                        <i class="bi bi-reception-4 text-success"></i>
-                                        <span>@Model.OnlinePlayers/@Model.MaxPlayers</span>
-                                    }
-                                    else 
-                                    {
-                                        <span class="text-danger fw-bolder">X</span>
-                                        <span>Offline</span>
-                                    }
+                                <div id="server-status">
+                                    <i class="bi bi-reception-4 text-muted"></i>
+                                    <div class="spinner-border spinner-border-sm" role="status">
+                                    </div>
                                 </div>
                         </li>
                     </ul>
@@ -60,10 +53,22 @@
 
     <footer class="border-top footer p-3 text-center">
         <div class="container">
-            &copy; 2025 arostek.dev <a class="no-decoration" href="https://github.com/xAdiro"><i class="bi bi-link-45deg"></i>github.com/xAdiro</a>
+            &copy; 2025 arostek.dev <a class="no-decoration" href="https://github.com/xAdiro/vanilla-star-server"><i class="bi bi-link-45deg"></i>github.com/xAdiro/vanilla-star-server</a>
         </div>
     </footer>
 
+
+    <script>
+        window.addEventListener("DOMContentLoaded", async () => {
+            try {
+                const response = await fetch("/Shared/_McServerStatus");
+                const html = await response.text();
+                document.getElementById("server-status").innerHTML = html;
+            } catch (err) {
+                console.error(err);
+            }
+        });
+    </script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -71,3 +76,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

@@ -9,7 +9,9 @@
     <br>
     <br>
     <h1>IP: mc.arostek.dev</h1>
+    <h3>1.21.7</h3>
     <br>
+    <h1 id="time-remaining" class="text-success display-3"></h1>
     <br>
     <h2>Co to i po co?</h2>
     <p>
@@ -25,13 +27,14 @@
     </p>
     <h2>Wersja i platformy</h2>
     <p>
-        1.21.7 Java i Bedrock Edition. Nie trzeba nic instalować, żeby dołączyć. Nie trzeba mieć wykupionego konta. 
+        1.21.7 Java i Bedrock Edition. Nie trzeba nic instalować, żeby dołączyć. Trzeba mieć kupionego MC.
         Można grać z PCta, konsoli czy telefonu.
         Są jednak dwa <a href="#mody">opcjonalne mody</a>(tylko Java Edition) do których instalacji zachęcam.
     </p>
     <h2>Wprowadzone zmiany</h2>
     <p>
-        Nie zmieniają znacząco rozgrywki (poza jedną). Lista wszystkich zmian jest <a asp-page="/Wiki" asp-area="">tutaj</a>, ale jedna najbardziej kontrowersyjna to: 
+        Nether otwiera się po tygodniu. End po trzech.
+        Nie zmieniłem znacząco rozgrywki. Lista wszystkich zmian jest <a asp-page="/Wiki" asp-area="">tutaj</a>, ale jedna najbardziej kontrowersyjna to: 
         <b>Elytra nie może mieć mendingu i naprawia się ją netherite scrapami</b>. Usunąłem też posrane koszty XP w 
         naprawie przedmiotów - max jest 15 i nigdy nie będzie większy. Nie istnieje "Too expensive".
     </p>
@@ -40,10 +43,20 @@
         <a target="_blank" href="https://modrinth.com/plugin/simple-voice-chat">Simple Voice Chat</a> czat głosowy w grze.
         <br>
         <br>
+        <a target="_blank" href="https://modrinth.com/mod/sodium">Sodium</a> znacznie poprawia fps na każdym komputerze.
+        Polecam nawet na dobre komputery po minecraft jest skrajnie niezoptymalizowany.
+        <br>
+        <br>
         <a target="_blank" href="https://modrinth.com/mod/distanthorizons">Distant Horizons</a> mod umożliwiający ustawienie dużego
         render distance (na tym serwerze do 128 chunków), poprzez nie rysowanie szczegółów odległych chunków.
         Dla osób ze słabszym PC też może się nadać, bo można ustawić bardzo mały normalny render distance, 
         a podkręcić ten mniej szczegółowy.
+    </p>
+    <h2>Instalacja modów</h2>
+    <p>
+      Najłatwiej instalować przez launchery z taką opcją np. <a target="_blank" href="https://www.curseforge.com/download/app">CurseForge</a>, 
+      <a target="_blank" href="https://prismlauncher.org/download">PrismLauncher</a> lub <a target="_blank" href="https://atlauncher.com/downloads">ATLauncher</a>, a jak nie to ręcznie.
+      Wybrać najnowszego fabrica na 1.21.7.
     </p>
     <h2>Utrzymanie serwera</h2>
     <p>
@@ -51,3 +64,25 @@
         niemniej prąd nie jest darmowy i utrzymanie to koszt około 10 zł miesięcznie. Jeśli ktoś uzna, że chce coś dać to najwygodniej blikiem.
     </p>
 </div>
+
+@section Scripts {
+    <script>
+        const releaseDate = new Date("2025-10-24T19:00:00").getTime();
+        const timerInterval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = releaseDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("time-remaining").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            if (distance < 0) {
+                clearInterval(timerInterval);
+                document.getElementById("time-remaining").innerHTML = "Już się zaczęło!";
+            }
+        });
+    </script>
+}

@@ -8,10 +8,11 @@
 Brak danych
 <br>
 
+@*{
 <label for="abc" class="form-label">Filtry</label>
 <select class="form-select bg-dark text-white" id="abc" name="abc">
     @foreach(var board in @Model.Categories){
         <option value="@board.Value">@board.FriendlyName</option>
     }
 </select>
-
+}*@

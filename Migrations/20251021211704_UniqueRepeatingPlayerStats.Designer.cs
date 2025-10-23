@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using vanilla_asterisk.Data;
@@ -11,9 +12,11 @@ using vanilla_asterisk.Data;
 namespace vanilla_asterisk.Migrations
 {
     [DbContext(typeof(MinecraftDbContext))]
-    partial class MinecraftDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251021211704_UniqueRepeatingPlayerStats")]
+    partial class UniqueRepeatingPlayerStats
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,9 +42,6 @@ namespace vanilla_asterisk.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("UUID")
-                        .IsUnique();
 
                     b.ToTable("Players");
                 });
@@ -96,9 +96,6 @@ namespace vanilla_asterisk.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
-
-                    b.HasIndex("Name", "CategoryId")
-                        .IsUnique();
 
                     b.ToTable("Stats");
                 });

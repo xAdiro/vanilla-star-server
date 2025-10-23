@@ -12,11 +12,12 @@ using vanilla_asterisk.Services;
 namespace vanilla_asterisk.Pages;
 
 [BindProperties]
-public class StatsModel(IScoreboardReader sr, MinecraftDbContext context) : BasePageModel
+public class StatsModel(MinecraftDbContext context) : BasePageModel
 {
     public required List<AliasedValue> Categories { get; set; }
     public required List<AliasedValue> Players { get; set; }
-    private readonly IScoreboardReader sr = sr;
+
+
     private readonly MinecraftDbContext context = context;
 
     public async Task OnGetAsync()
@@ -27,6 +28,34 @@ public class StatsModel(IScoreboardReader sr, MinecraftDbContext context) : Base
             Value = category.Name
         }).ToListAsync();
     }
+
+    public async Task<IActionResult> OnGetStatsNamesAsync(string categoryName)
+    {
+        List<string> statsNames = await context.Stats.Include(s => s.Category)
+            .Where(s => s.Category.Name == categoryName)
+            .Select(s => s.Name)
+            .ToListAsync();
+
+        return new JsonResult(statsNames);
+    }
+
+    public async Task<IActionResult> OnGetPlayerStatsAsync(string categoryName, string statName)
+    {
+        var data = await context.Players
+            .Include(p => p.PlayerStats)
+            .ThenInclude(ps => ps.Stat)
+            .ThenInclude(s => s.Category)
+            .Select(p => new
+            {
+                p.Name,
+                Stats = p.PlayerStats
+                    .Where(ps => ps.Stat.Name == statName && ps.Stat.Category.Name == categoryName)
+                    .Select(ps => new {ps.Value, ps.Date}).ToList()
+            })
+            .ToListAsync();
+        return new JsonResult(data);
+    }
+
 
     [Obsolete]
     private void SaveCategoriesToDb()

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using vanilla_asterisk.Data;
@@ -11,9 +12,11 @@ using vanilla_asterisk.Data;
 namespace vanilla_asterisk.Migrations
 {
     [DbContext(typeof(MinecraftDbContext))]
-    partial class MinecraftDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251022005240_UniqueStatNameCategory")]
+    partial class UniqueStatNameCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

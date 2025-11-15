@@ -8,11 +8,67 @@
 Brak danych
 <br>
 
-@*{
-<label for="abc" class="form-label">Filtry</label>
-<select class="form-select bg-dark text-white" id="abc" name="abc">
-    @foreach(var board in @Model.Categories){
-        <option value="@board.Value">@board.FriendlyName</option>
+<label for="category" class="form-label">Kategoria</label>
+<select class="form-select bg-dark text-white" id="category" name="category">
+    <option disabled selected></option>
+    @foreach (var category in @Model.Categories)
+    {
+        <option value="@category.Value">@category.FriendlyName</option>
     }
 </select>
-}*@
+
+<label for="stat" class="form-label">Statystyka</label>
+<select class="form-select bg-dark text-white" id="stat" name="stat"></select>
+</select>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(categoryChange);
+        $(document).ready(statChange);
+
+        function categoryChange() {
+            document.getElementById("category").addEventListener("change", async (e) => {
+                const categoryName = e.target.value;
+                const url = `?handler=StatsNames&categoryName=${categoryName}`;
+
+                const response = await fetch(url);
+                if (!response.ok) {
+                    console.log("ups nie znaleziono");
+                    return;
+                }
+
+                const stats = await response.json();
+
+                $("#stat").empty();
+                $("#stat").append(`<option disabled selected></option>`);
+                stats.forEach(stat => {
+                    const statName = stat.substring(10).replace("_", " ");
+                    $("#stat").append(`<option value="${stat}">${statName}</option>`);
+                });
+            });
+        }
+
+        function statChange() {
+            $("#stat").on("change", async (e) => {
+                const categoryName = $("#category").val();
+                const statName = e.target.value;
+                const url = `?handler=PlayerStats&categoryName=${categoryName}&statName=${statName}`;
+
+                const response = await fetch(url);
+                if (!response.ok) {
+                    console.log("ups nie znaleziono");
+                    return;
+                }
+
+                const playerStats = await response.json();
+                console.log(playerStats);
+            });
+
+        }
+    </script>
+}
+
+
+
+

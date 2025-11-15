@@ -11,7 +11,7 @@ public class McServerStatusModel(IMcServerStatusService mc) : BasePageModel
 
     public void OnGet()
     {
-        mc.Connect("mc.arostek.pl", 25565);
+        mc.Connect("mc.arostek.dev", 25565);
         IsOnline = mc.IsOnline;
         MaxPlayers = mc.MaxPlayersCount;
         OnlinePlayers = mc.OnlinePlayersCount;
